@@ -4,6 +4,7 @@
   "description": "for parsing Hebrew Strongs",
   "main": "lib/index.js",
   "scripts": {
+    "strongs-parse": "babel-node ./scripts/strongsParse.js",
     "test": "eslint ./src ./index.js && jest",
     "fix": "eslint ./src ./index.js --fix",
     "prebuild": "rm -rf ./lib",
@@ -61,7 +62,6 @@
     "promise-parallel-throttle": "^3.2.0",
     "request": "^2.87.0",
     "url": "^0.11.0",
-    "usfm-js": "^1.0.2",
     "yamljs": "^0.3.0"
   }
 }
