@@ -6,6 +6,10 @@ License: public domain document
 
 <img src="screenshot.png">
 
+# resources folder
+
+Generated for unfoldingWord/translationCore by running `npm run strongs-parse`
+
 # JSON format
 
 This is the file Eliran Wong formatted for use in his iOS app "BibleBento Plus" (<a href='https://itunes.apple.com/us/app/biblebento-plus/id1439743446?mt=8'>https://itunes.apple.com/us/app/biblebento-plus/id1439743446?mt=8</a>)

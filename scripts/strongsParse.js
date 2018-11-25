@@ -11,15 +11,15 @@
 import { generateStrongsFiles} from '../src/strongsHelpers';
 
 function main() {
-  // let version = getParameter('ver');
-  // if(!version) {
-  //   console.log('process.argv', process.argv);
-  //   console.log("Invalid parameter, expect version such as: '--ver=v0.2'");
-  //   return;
-  // }
+  let version = getParameter('ver');
+  if(!version) {
+    console.log('process.argv', process.argv);
+    console.log("Invalid parameter, expect version such as: '--ver=v0.2'");
+    return;
+  }
 
   return new Promise((resolve) => {
-    generateStrongsFiles(resolve);
+    generateStrongsFiles(version);
   }).then(() => {
     console.log('strongs processing completed!');
   }).catch((e) => {
